@@ -97,7 +97,7 @@ a.download::after {
     content: ' ↓';
 }
 
-a.inline-link {
+p a {
     text-decoration: underline rgba(0, 0, 0, .35);
 }
 
