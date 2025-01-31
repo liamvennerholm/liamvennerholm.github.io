@@ -38,11 +38,31 @@ body {
     margin: 2.5rem;
 }
 
-.wrapper{
-    inline-size: 30rem;
+header {
+    display: flex;
 }
 
-/* FORMATTING */
+.primary-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;     
+}
+
+.primary-navigation ul li {
+    display: inline;
+}
+
+.primary-navigation ul li:not(:last-child):after {
+    content: ' → ';
+}
+
+
+
+nav {
+    margin: 0;
+    padding: 0;
+}
 
 h1 {
     font-size: 1.5rem;
@@ -61,7 +81,7 @@ p {
     font-size: 1rem;
     font-weight: 500;
     margin-block: .5rem;
-    max-width: 50rem;
+    max-width: 25rem;
 }
 
 a {  
@@ -70,15 +90,15 @@ a {
 }
 
 a.link::after { 
-    content: ' \2192'; 
+    content: ' →'; 
 }
 
 a.download::after { 
-    content: ' \2193';
+    content: ' ↓';
 }
 
 a.inline-link {
-    text-decoration: underline rgba(0, 0, 0, .25);
+    text-decoration: underline rgba(0, 0, 0, .35);
 }
 
 ul {
