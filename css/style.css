@@ -91,6 +91,7 @@ a {
 
 a.link::after { 
     content: ' →'; 
+    text-decoration: none;
 }
 
 a.download::after { 
