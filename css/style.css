@@ -124,3 +124,7 @@ a.download:after {
     content: '↓';
     margin-inline-start: .25rem; 
 }
+
+a:hover, a:focus-visible {
+    text-decoration: none;
+}
