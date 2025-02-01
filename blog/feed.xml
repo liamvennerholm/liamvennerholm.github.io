@@ -9,9 +9,17 @@
     <webMaster>Liam Vennerholm</webMaster>
     <copyright>Liam Vennerholm</copyright>
     <item>
+      <title>Testing …</title>
+      <pubDate>Sat, 1 Feb 2025 01:18:22 -0600</pubDate>
+      <link>https://liamvennerholm.github.io/blog/posts/testing.html</link>
+      <author>Liam Vennerholm</author>
+      <description><![CDATA[1 2 3]]></description>
+    </item>
+    <item>
       <title>Testing</title>
       <pubDate>Fri, 31 Jan 2025 23:53:39 -0600</pubDate>
       <link>https://liamvennerholm.github.io/blog/posts/testing.html</link>
+      <guid isPermaLink="true">https://liamvennerholm.github.io/blog/posts/testing.html</guid>
       <author>Liam Vennerholm</author>
       <description><![CDATA[1 2 3 …]]></description>
     </item>
