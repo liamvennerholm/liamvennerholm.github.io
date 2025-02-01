@@ -108,7 +108,7 @@ p i.material-symbols-outlined {
 
 a {  
     color: #000;
-    text-decoration: underline #888;
+    text-decoration: underline #000;
 }
 
 a.link:after { 
