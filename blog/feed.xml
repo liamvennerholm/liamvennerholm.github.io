@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
   <channel>
-    <generator>RSS Builder by B!Soft</generator>
     <title>Liam Vennerholm's Blog</title>
     <link>liamvennerholm.github.io</link>
     <description>Liam Vennerholm's Blog</description>
     <language>en-us</language>
     <webMaster>Liam Vennerholm</webMaster>
-    <copyright>Liam Vennerholm</copyright>
-    <item>
-      <title>Testing …</title>
-      <pubDate>Sat, 1 Feb 2025 01:18:22 -0600</pubDate>
-      <link>https://liamvennerholm.github.io/blog/posts/testing.html</link>
-      <author>Liam Vennerholm</author>
-      <description><![CDATA[1 2 3]]></description>
-    </item>
+    <copyright>Liam Vennerholm 2025</copyright>
     <item>
       <title>Testing</title>
       <pubDate>Fri, 31 Jan 2025 23:53:39 -0600</pubDate>
