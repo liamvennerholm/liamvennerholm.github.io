@@ -14,10 +14,13 @@
       <guid isPermaLink="true">https://liamvennerholm.github.io/blog/posts/testing.html</guid>
       <author>Liam Vennerholm</author>
       <description><![CDATA[
-				<article>
-		      <p><em>Is this thing on?</em></p>
-		      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat rem quidem ea soluta nulla repellendus ab? Rerum, dignissimos! Quam quaerat suscipit, magni modi unde consectetur accusamus labore quis veniam dignissimos!</p>
-		    </article>
+        <main>
+          <article>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat rem quidem ea soluta nulla repellendus ab? Rerum, dignissimos! Quam quaerat suscipit, magni modi unde consectetur accusamus labore quis veniam dignissimos!
+            </p>
+          </article>
+        </main>
 			]]></description>
     </item>
   </channel>
