@@ -38,8 +38,6 @@ body {
     margin: 2.5rem 3rem;
 }
 
-
-
 header {
     display: flex;
 }
@@ -112,10 +110,30 @@ p {
     font-weight: 500;
     margin-block: .5rem;
     max-width: 25rem;
+    line-height: 1.25;
+}
+
+.dropcap {
+    font-size: 2.75rem;
+    font-weight: 200;
+    line-height: .9;
+    float: left;
+    margin: 0 .25rem -.25rem -.2rem;
+}
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 p i.material-symbols-outlined {
     margin-inline-start: 0.25rem;
+
 }
 
 a {  
