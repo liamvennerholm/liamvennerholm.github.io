@@ -9,13 +9,9 @@ img {
 
 /* FONTS */
 
-:root {
-    font-family: Inter, sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1;
-}
-
+:root { font-family: Inter, sans-serif; }
 @supports (font-variation-settings: normal) {
-    :root { font-family: InterVariable, sans-serif; }
+  :root { font-family: InterVariable, sans-serif; }
 }
 
 .material-symbols-outlined {
@@ -34,7 +30,7 @@ img {
 body {
     background-color: #bbb;
     color: #000;
-    font-family: Inter, Helvetica, Arial, sans-serif;
+    font-family: InterVariable, Helvetica, Arial, sans-serif;
     margin: 2.5rem 3rem;
 }
 
@@ -90,7 +86,7 @@ nav {
 
 h1 {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 350;
     margin-block: 2rem;
 }
 
@@ -116,7 +112,7 @@ p {
 .dropcap {
     font-size: 2.75rem;
     font-weight: 200;
-    line-height: .9;
+    line-height: .915;
     float: left;
     margin: 0 .25rem -.25rem -.2rem;
 }
