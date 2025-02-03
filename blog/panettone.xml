@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
   <channel>
-    <title>Liam Vennerholm’s Blog</title>
+    <title>Liam Vennerholm’s Blog → Panettone</title>
     <link>liamvennerholm.github.io</link>
     <description>Liam Vennerholm’s Blog</description>
     <language>en-us</language>
     <webMaster>Liam Vennerholm</webMaster>
     <copyright>Liam Vennerholm 2025</copyright>
+
+<!--
+
     <item>
       <title>Testing</title>
       <pubDate>Fri, 31 Jan 2025 23:53:39 -0600</pubDate>
@@ -17,11 +20,16 @@
         <main>
           <article>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat rem quidem ea soluta nulla repellendus ab? Rerum, dignissimos! Quam quaerat suscipit, magni modi unde consectetur accusamus labore quis veniam dignissimos!
+            
+            Lorem ipsum.
+
             </p>
           </article>
         </main>
 			]]></description>
     </item>
+
+-->
+
   </channel>
 </rss>
