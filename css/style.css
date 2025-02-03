@@ -42,6 +42,10 @@ main section p:is(:first-child) {
     margin-block-start: 0;
 }
 
+main section:not(:first-child) {
+    margin-block: 1rem;
+}
+
 footer {
     margin-block-start: 5rem;
 }
@@ -50,9 +54,10 @@ footer {
     padding-inline-start: 0;
     font-size: .75rem;
     font-weight: 600;
+    list-style-type: none;
 }
 
-ul {
+ul.links {
     list-style-type: none;
     margin-block: .5rem;
     padding-inline-start: 1rem;
