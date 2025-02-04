@@ -120,6 +120,10 @@ p {
     line-height: 1.25;
 }
 
+em {
+    font-family: inter-italic;
+}
+
 .dropcap {
     font-size: 2.75rem;
     font-weight: 200;
