@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Liam Vennerholm’s Blog → Favorites</title>
+    <link>liamvennerholm.github.io</link>
+    <description>Liam Vennerholm’s Blog</description>
+    <language>en-us</language>
+    <webMaster>Liam Vennerholm</webMaster>
+    <copyright>Liam Vennerholm 2025</copyright>
+
+<!--
+
+    <item>
+      <title>Testing</title>
+      <pubDate>Fri, 31 Jan 2025 23:53:39 -0600</pubDate>
+      <link>https://liamvennerholm.github.io/blog/posts/testing.html</link>
+      <guid isPermaLink="true">https://liamvennerholm.github.io/blog/posts/testing.html</guid>
+      <author>Liam Vennerholm</author>
+      <description><![CDATA[
+        <main>
+          <article>
+            <p>
+
+            Lorem ipsum.
+
+            </p>
+          </article>
+        </main>
+			]]></description>
+    </item>
+
+-->
+
+  </channel>
+</rss>

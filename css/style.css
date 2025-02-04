@@ -8,7 +8,7 @@ img {
 }
 
 :root {
-    --text-width: 25rem;  
+    --text-width: 50ch;  
     --fg-color: #000;
     --bg-color: #bbb;
 }
@@ -44,7 +44,7 @@ header {
     display: flex;
 }
 
-main section p:is(:first-child) {
+main section :is(:first-child) {
     margin-block-start: 0;
 }
 
@@ -105,7 +105,7 @@ h2 {
     font-size: 1rem;
     font-weight: 500;
     margin-block: .5rem;
-    max-width: 50rem;
+    max-width: var(--text-width);
 }
 
 h2 i.material-symbols-outlined {
@@ -116,7 +116,7 @@ p {
     font-size: 1rem;
     font-weight: 500;
     margin-block: .5rem;
-    max-width: --text-width;
+    max-width: var(--text-width);
     line-height: 1.25;
 }
 
@@ -140,7 +140,6 @@ p {
 
 p i.material-symbols-outlined {
     margin-inline-start: 0.25rem;
-
 }
 
 small {
