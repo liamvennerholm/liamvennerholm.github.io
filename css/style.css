@@ -7,6 +7,12 @@ img {
     max-inline-size: 100%;
 }
 
+:root {
+    --text-width: 25rem;  
+    --fg-color: #000;
+    --bg-color: #bbb;
+}
+
 /* FONTS */
 
 :root { font-family: Inter, sans-serif; }
@@ -28,8 +34,8 @@ img {
 /* LAYOUT */
 
 body {
-    background-color: #bbb;
-    color: #000;
+    background-color: var(--bg-color);
+    color: var(--fg-color);
     font-family: InterVariable, Helvetica, Arial, sans-serif;
     margin: 2.5rem 3rem;
 }
@@ -110,7 +116,7 @@ p {
     font-size: 1rem;
     font-weight: 500;
     margin-block: .5rem;
-    max-width: 25rem;
+    max-width: --text-width;
     line-height: 1.25;
 }
 
@@ -137,9 +143,15 @@ p i.material-symbols-outlined {
 
 }
 
+small {
+    font-size: .75rem;
+    font-weight: 600;
+}
+
 a {  
-    color: #000;
-    text-decoration: underline #000;
+    color: var(--fg-color);
+    text-decoration: underline var(--fg-color);
+    text-decoration-thickness: .09rem;
 }
 
 a.link:after { 
