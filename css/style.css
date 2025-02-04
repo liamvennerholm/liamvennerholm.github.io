@@ -154,7 +154,6 @@ small {
 a {  
     color: var(--fg-color);
     text-decoration: underline var(--fg-color);
-    text-decoration-thickness: .09rem;
 }
 
 a.link:after { 
