@@ -13,6 +13,10 @@ img {
     --bg-color: #bbb;
 }
 
+body {
+    max-width: var(--text-width);
+}
+
 /* FONTS */
 
 :root { font-family: Inter, sans-serif; }
@@ -116,12 +120,7 @@ p {
     font-size: 1rem;
     font-weight: 500;
     margin-block: .5rem;
-    max-width: var(--text-width);
     line-height: 1.25;
-}
-
-em {
-    font-style: italic;
 }
 
 .dropcap {
