@@ -140,7 +140,7 @@ p {
     line-height: 1.25;
 }
 
-.dropcap::first-letter{
+.dropcap{
     font-size: 2.75rem;
     font-weight: 200;
     line-height: .915;
