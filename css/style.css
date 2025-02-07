@@ -100,6 +100,22 @@ nav {
     padding: 0;
 }
 
+article {
+    margin-block: 2rem;
+}
+
+div.scroll-container img {
+    display: inline;
+    max-height: 15rem;
+    margin-inline: .5rem;
+}
+
+div.scroll-container{
+    overflow: auto;
+    white-space: nowrap;
+    margin-block: 1rem;
+}
+
 h1 {
     font-size: 1.5rem;
     font-weight: 350;
@@ -124,22 +140,12 @@ p {
     line-height: 1.25;
 }
 
-.dropcap {
+.dropcap::first-letter{
     font-size: 2.75rem;
     font-weight: 200;
     line-height: .915;
     float: left;
     margin: 0 .25rem -.25rem -.2rem;
-}
-
-.sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
 }
 
 p i.material-symbols-outlined {
@@ -149,6 +155,11 @@ p i.material-symbols-outlined {
 small {
     font-size: .75rem;
     font-weight: 600;
+}
+
+hr{
+    border: solid var(--fg-color) .0625rem;
+    margin-block: 1rem;
 }
 
 a {  
