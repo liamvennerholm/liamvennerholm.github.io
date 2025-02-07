@@ -105,15 +105,16 @@ article {
 }
 
 div.scroll-container img {
-    display: inline;
     max-height: 15rem;
-    margin-inline: .5rem;
 }
 
 div.scroll-container{
+    display: flex;
     overflow: auto;
     white-space: nowrap;
     margin-block: 1rem;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 h1 {
