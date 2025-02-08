@@ -119,7 +119,7 @@ div.scroll-container{
 div.scroll-container img {
     max-height: 20rem;
     @media(max-width:40rem) {
-        max-height: 10rem;
+        max-height: 12rem;
     }
 }
 
