@@ -9,10 +9,26 @@ img {
 }
 
 :root {
-    --text-width: 34rem;  
-    --fg-color: #000;
-    --img-bg-color: rgba(0,0,0,.25);
-    --bg-color: #bbb;
+    --text-width: 34rem;
+    --text-weight-small: 600;
+    --text-weight: 500;
+    --text-weight-h1: 350;
+    --text-weight-dropcap: 200;
+
+    --cosmic-latte: #fff5e6;
+    --aero-green: #d8ecd4;
+    --self-luminous-red: #fcdada;
+    --blending-blue: #94bde5;
+    --medium-gray: #bbbbbb;
+    --go-away-green: #8fb198;
+    --panettone-yellow: #f9d879;
+
+    --stygian-blue: #27235f;
+    --p-448c: #4b422c;
+    --eichengrau: #16171d;
+    
+    --fg-color: #000000;
+    --bg-color: #bbbbbb;
 }
 
 body {
@@ -124,13 +140,13 @@ article {
 
 h1 {
     font-size: 1.5rem;
-    font-weight: 350;
+    font-weight: var(--text-weight-h1);
     margin-block: 2rem;
 }
 
 h2 {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: var(--text-weight);
     margin-block: .5rem;
     max-width: var(--text-width);
 }
@@ -141,14 +157,14 @@ h2 i.material-symbols-outlined {
 
 p {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: var(--text-weight);
     margin-block: .5rem;
     line-height: 1.25;
 }
 
 .dropcap{
     font-size: 2.75rem;
-    font-weight: 200;
+    font-weight: var(--text-weight-dropcap);
     line-height: .915;
     float: left;
     margin: 0 .25rem -.25rem -.2rem;
@@ -158,9 +174,13 @@ p i.material-symbols-outlined {
     margin-inline-start: 0.25rem;
 }
 
+em {
+    font-weight: var(--text-weight);
+}
+
 small, figcaption, .footer{
     font-size: .75rem;
-    font-weight: 600;
+    font-weight: var(--text-weight-small);
 }
 
 hr{
