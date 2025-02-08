@@ -9,7 +9,7 @@ img {
 }
 
 :root {
-    --text-width: 50ch;  
+    --text-width: 34rem;  
     --fg-color: #000;
     --bg-color: #bbb;
 }
@@ -105,7 +105,10 @@ article {
 }
 
 div.scroll-container img {
-    max-height: 10rem;
+    max-height: 20rem;
+    @media(max-width:40rem) {
+        max-height: 10rem;
+    }
 }
 
 div.scroll-container{
