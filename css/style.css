@@ -23,7 +23,7 @@ img {
     --go-away-green: #8fb198;
     --panettone-yellow: #f9d879;
 
-    --stygian-blue: #27235f;
+    --stygian-blue: #;
     --p-448c: #4b422c;
     --eichengrau: #16171d;
     
@@ -90,24 +90,27 @@ ul.links {
     font-weight: 500;
 }
 
-.primary-navigation ul {
+.primary-navigation {
+
+    & ul {
     list-style: none;
     margin-block: 0;
     margin: 0;
     padding: 0;
     display: flex;
-}
 
-.primary-navigation ul li {
-    display: inline;
-}
+        & h1 {
+            margin-block-start: 0;
+        }
 
-.primary-navigation ul li:not(:last-child):after {
-    content: ' → ';
-}
+        & li {
+            display: inline;
+        }
 
-.primary-navigation ul h1 {
-    margin-block-start: 0;
+        & li:not(:last-child)::after {
+            content: ' → ';
+        }
+    }
 }
 
 nav {
