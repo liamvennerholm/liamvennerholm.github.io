@@ -155,11 +155,15 @@ h2 i.material-symbols-outlined {
     margin-inline-start: 0.25rem;
 }
 
-p {
+p, blockquote{
     font-size: 1rem;
     font-weight: var(--text-weight);
     margin-block: .5rem;
     line-height: 1.25;
+}
+
+blockquote {
+    margin: 1rem;
 }
 
 .dropcap{
@@ -172,10 +176,6 @@ p {
 
 p i.material-symbols-outlined {
     margin-inline-start: 0.25rem;
-}
-
-em {
-    font-weight: var(--text-weight);
 }
 
 small, figcaption, .footer{
