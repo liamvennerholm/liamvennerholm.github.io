@@ -66,12 +66,17 @@ header {
     display: flex;
 }
 
-main section :is(:first-child) {
-    margin-block-start: 0;
-}
+main {
+    & section {
 
-main section:not(:first-child) {
-    margin-block: 1rem;
+        &:first-child {
+            margin-block-start: 0;
+        }
+        
+        &:not(:first-child) {
+            margin-block-start: 1rem;
+        }
+    }  
 }
 
 footer {
@@ -105,10 +110,10 @@ ul.links {
 
         & li {
             display: inline;
-        }
 
-        & li:not(:last-child)::after {
-            content: ' → ';
+            &:not(:last-child)::after {
+                content: ' → ';
+            }
         }
     }
 }
@@ -136,6 +141,7 @@ article {
 .carousel img {
     border-radius: .5rem;
     max-height: 20rem;
+
     @media(max-width:40rem) {
         max-height: 12rem;
     }
@@ -154,10 +160,6 @@ h2 {
     max-width: var(--text-width);
 }
 
-h2 i.material-symbols-outlined {
-    margin-inline-start: 0.25rem;
-}
-
 p, blockquote{
     font-size: 1rem;
     font-weight: var(--text-weight);
@@ -166,10 +168,18 @@ p, blockquote{
 }
 
 blockquote {
+    font-style: italic;
+}
+
+i.material-symbols-outlined {
+    margin-inline-start: .25rem;
+}
+
+blockquote {
     margin: 1rem;
 }
 
-.dropcap{
+#dropcap{
     font-size: 2.75rem;
     font-weight: var(--text-weight-dropcap);
     line-height: .915;
@@ -177,38 +187,38 @@ blockquote {
     margin: 0 .25rem -.25rem -.2rem;
 }
 
-p i.material-symbols-outlined {
-    margin-inline-start: 0.25rem;
-}
-
-small, figcaption, .footer{
+small, figcaption, .footer, #date {
     font-size: .75rem;
     font-weight: var(--text-weight-small);
 }
 
-hr{
+#date {
+    font-style: italic;
+}
+
+hr {
     border: solid var(--fg-color) .0625rem;
     margin-block: 1rem;
 }
 
 a {  
     color: var(--fg-color);
-}
 
-a.link:after { 
-    display: inline-block;
-    text-decoration: none;
-    content: '→';
-    margin-inline-start: .25rem; 
-}
+    &.link::after {
+        content: '→';
+    }
 
-a.download:after { 
-    display: inline-block;
-    text-decoration: none;
-    content: '↓';
-    margin-inline-start: .25rem; 
-}
+    &.download::after {
+        content: '↓';
+    }
 
-a:hover, a:focus-visible {
-    text-decoration: none;
+    &::after {
+        display: inline-block;
+        text-decoration: none;
+        margin-inline-start: .25rem;
+    }
+
+    &:hover, &:focus-visible {
+        text-decoration: none;
+    }
 }
