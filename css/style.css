@@ -2,12 +2,6 @@
     box-sizing: border-box;
 }
 
-img {
-    display: block;
-    max-inline-size: 100%;
-    font-style: italic;
-}
-
 :root {
     --text-width: 34rem;
     --text-weight-small: 600;
@@ -19,11 +13,9 @@ img {
     --aero-green: #d8ecd4;
     --self-luminous-red: #fcdada;
     --blending-blue: #94bde5;
-    --medium-gray: #bbbbbb;
     --go-away-green: #8fb198;
     --panettone-yellow: #f9d879;
 
-    --stygian-blue: #;
     --p-448c: #4b422c;
     --eichengrau: #16171d;
     
@@ -33,6 +25,17 @@ img {
 
 body {
     max-width: var(--text-width);
+    font-feature-settings: 
+        "ss03",
+        "cv09",
+        "cv03",
+        "cv04";
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+    font-style: italic;
 }
 
 /* FONTS */
@@ -176,7 +179,7 @@ i.material-symbols-outlined {
 }
 
 blockquote {
-    margin: 1rem;
+    margin-inline: 1rem;
 }
 
 #dropcap{
