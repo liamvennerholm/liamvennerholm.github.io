@@ -1,9 +1,35 @@
+/* 
+================================
+resets
+================================
+*/
+
 *, *::before, *::after {
     box-sizing: border-box;
-    /* margin-block-start: 0; */
+    margin: 0;
+    padding: 0;
+    font-feature-settings: 
+    "ss03",
+    "cv09",
+    "cv03",
+    "cv04";
 }
 
+img {
+    display: block;
+    max-inline-size: 100%;
+    font-style: italic;
+}
+
+/* 
+================================
+fonts and colors
+================================
+*/
+
 :root {
+    font-family: Inter, sans-serif; 
+
     --text-width: 34rem;
     --text-weight-small: 600;
     --text-weight: 500;
@@ -24,28 +50,10 @@
     --bg-color: #bbb;
 }
 
-body {
-    max-width: var(--text-width);
-    font-feature-settings: 
-        "ss03",
-        "cv09",
-        "cv03",
-        "cv04";
-}
-
-img {
-    display: block;
-    max-inline-size: 100%;
-    font-style: italic;
-}
-
-/* FONTS */
-
-:root { font-family: Inter, sans-serif; }
 @supports (font-variation-settings: normal) {
-  :root { font-family: InterVariable, sans-serif; }
-}
-
+    :root { font-family: InterVariable, sans-serif; }
+  }
+  
 .material-symbols-outlined {
     vertical-align: -.1rem;
     padding: 0;
@@ -57,9 +65,14 @@ img {
     'opsz' 12
 }
 
-/* LAYOUT */
+/* 
+================================
+boilerplate
+================================
+*/
 
 body {
+    max-width: var(--text-width);
     background-color: var(--bg-color);
     color: var(--fg-color);
     font-family: InterVariable, Helvetica, Arial, sans-serif;
@@ -68,6 +81,22 @@ body {
 
 header {
     display: flex;
+}
+
+.primary-navigation {
+
+    & ul {
+    list-style: none;
+    display: flex;
+
+        & li {
+            display: inline;
+
+            &:not(:last-child)::after {
+                content: ' → ';
+            }
+        }
+    }
 }
 
 main {
@@ -87,48 +116,20 @@ footer {
     margin-block-start: 5rem;
 }
 
-.footer {
+#footer {
     padding-inline-start: 0;
     list-style-type: none;
 }
 
-ul.links {
-    list-style-type: none;
-    margin-block: .5rem;
-    padding-inline-start: 1rem;
-    font-weight: 500;
-}
+/* 
+================================
+semantic element selectors
+================================
+*/
 
-.primary-navigation {
-
-    & ul {
-    list-style: none;
-    margin-block: 0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-
-        & h1 {
-            margin-block-start: 0;
-        }
-
-        & li {
-            display: inline;
-
-            &:not(:last-child)::after {
-                content: ' → ';
-            }
-        }
-    }
-}
-
-nav {
-    margin: 0;
-    padding: 0;
-}
-
-article {
-    margin-block: 2rem;
+#date {
+    font-style: italic;
+    margin-block-end: 2rem;
 }
 
 .carousel, .in-text{
@@ -154,20 +155,20 @@ article {
 h1 {
     font-size: 1.5rem;
     font-weight: var(--text-weight-h1);
-    margin-block: 2rem;
+    margin-block-end: 2rem;
 }
 
 h2 {
     font-size: 1rem;
     font-weight: var(--text-weight);
-    margin-block: .5rem;
+    margin-block-end: .5rem;
     max-width: var(--text-width);
 }
 
 p, blockquote{
     font-size: 1rem;
     font-weight: var(--text-weight);
-    margin-block: .5rem;
+    margin-block-end: .5rem;
     line-height: 1.25;
 }
 
@@ -196,10 +197,6 @@ small, figcaption, .footer, #date {
     font-weight: var(--text-weight-small);
 }
 
-#date {
-    font-style: italic;
-}
-
 hr {
     border: solid var(--fg-color) .0625rem;
     margin-block: 1rem;
@@ -225,4 +222,11 @@ a {
     &:hover, &:focus-visible {
         text-decoration: none;
     }
+}
+
+.links {
+    list-style-type: none;
+    margin-block: .5rem;
+    padding-inline-start: 1rem;
+    font-weight: 500;
 }
