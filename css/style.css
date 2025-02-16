@@ -1,5 +1,6 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
+    /* margin-block-start: 0; */
 }
 
 :root {
