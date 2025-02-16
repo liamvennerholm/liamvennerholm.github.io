@@ -67,7 +67,7 @@ fonts and colors
 
 /* 
 ================================
-boilerplate
+layout
 ================================
 */
 
@@ -127,31 +127,6 @@ semantic element selectors
 ================================
 */
 
-#date {
-    font-style: italic;
-    margin-block-end: 2rem;
-}
-
-.carousel, .in-text{
-    border-radius: .5rem;
-    display: flex;
-    overflow: auto;
-    white-space: nowrap;
-    margin-block: 1rem;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    gap: 1rem;
-}
-
-.carousel img {
-    border-radius: .5rem;
-    max-height: 20rem;
-
-    @media(max-width:40rem) {
-        max-height: 12rem;
-    }
-}
-
 h1 {
     font-size: 1.5rem;
     font-weight: var(--text-weight-h1);
@@ -174,14 +149,46 @@ p, blockquote{
 
 blockquote {
     font-style: italic;
+    margin-inline: 1rem;
 }
 
 i.material-symbols-outlined {
     margin-inline-start: .25rem;
 }
 
-blockquote {
-    margin-inline: 1rem;
+small, figcaption, #footer, #date {
+    font-size: .75rem;
+    font-weight: var(--text-weight-small);
+}
+
+hr {
+    border: solid var(--fg-color) .0625rem;
+    margin-block: 1rem;
+}
+
+.carousel, .in-text{
+    border-radius: .5rem;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    margin-block: 1rem;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    gap: 1rem;
+}
+
+.carousel img {
+    border-radius: .5rem;
+    max-height: 20rem;
+
+    @media(max-width:40rem) {
+        max-height: 12rem;
+    }
+}
+
+#date {
+    font-style: italic;
+    margin-block-end: 2rem;
 }
 
 #dropcap{
@@ -192,15 +199,11 @@ blockquote {
     margin: 0 .25rem -.25rem -.2rem;
 }
 
-small, figcaption, .footer, #date {
-    font-size: .75rem;
-    font-weight: var(--text-weight-small);
-}
-
-hr {
-    border: solid var(--fg-color) .0625rem;
-    margin-block: 1rem;
-}
+/* 
+================================
+links
+================================
+*/
 
 a {  
     color: var(--fg-color);
