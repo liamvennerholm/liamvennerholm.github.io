@@ -8,6 +8,34 @@
 		<atom:link href="https://liamvennerholm.github.io/panettone.xml" rel="self" type="application/rss+xml">
 
 		<item>
+			<title>On Descriptivism and Domestication</title>
+			<pubDate>Thursday, 20 Feb 2025 23:55:00 CST</pubDate>
+			<guid>20eb116e-679e-41be-8085-4f29ed46ec26</guid>
+			<link>https://liamvennerholm.github.io/blog/posts/panettone/on_descriptivism_and_domestication.html</link>
+			<description><![CDATA[
+
+                <p><span id="dropcap">L</span>inguistic concepts map nicely onto architecture, as illustrated by the postmodernists. But semiotics is not the only example of this. In linguistics, people often discuss descriptivism vs. prescriptivism <small>(this concept isn’t exclusive to linguistics, but it is very prominent in linguistic circles)</small>. One version of this discussion is about whether or not dictionaries are meant to strictly define a word or record how that word is most commonly used. Many linguists are not interested in enforcing a “correct” way to use a given language, they’re merely interested in the observation of language in use, in the wild. It’s more about learning how people use language by watching and documenting—<em>describing</em>—rather than telling them the rights and wrongs of grammar—<em>prescribing</em>.</p>
+
+                <p>This makes me think about Louis Kahn’s conversation with a brick in the 2003 documentary <a href="https://www.imdb.com/title/tt0373175/"><em>My Architect</em> by Nathaniel Kahn</a>.</p>
+
+                <blockquote>
+                    <p>“If you think of Brick, you say to Brick, ‘What do you want, Brick?’ And Brick says to you, ‘I like an arch.’ And if you say to Brick, ‘Look, arches are expensive, and I can use a concrete lintel over you. What do you think of that, Brick?’ Brick says, ‘I like an arch.’ And it’s important, you see, that you honor the material that you use … You can only do it if you honor the brick and glorify the brick instead of shortchanging it.”</p>
+                </blockquote>
+
+                <p>Louis Kahn called this idea “existence will.” The existence will of a brick is the state the brick wants to be in. It is more brick-like to be an arch than to be a lintel. This is because of the brick’s inherent properties: its size, its shape, its proportions, its materiality. To make a lintel you would either have to change the brick (e.g. jack arches and their fanned-out, skewed brick shapes; though even then, it’s still an arch) or, as in Kahn’s words above, avoid brick altogether and just use concrete. This tension is the existence will of the brick. The easiest path forward forces an arch.</p>
+
+                <p>In thermodynamics, the idea of entropy can be understood similarly. Entropy is commonly conceived as the tendency of everything in the universe toward decay, but there’s another, more intuitive understanding of entropy that I think is germaine to this discussion of existence will. Rather than being a tendency toward decay, entropy can differently be understood as a tendency toward a state where energy is spread out evenly rather than a state where energy is concentrated. For example, a warm coffee mug tends to cool down in an environment that’s cooler than it, and in turn the environment around it gets slightly warmer until the mug and the environment are the same temperature. In other words, energy that’s concentrated (the warm mug in a cool environment) tends to spread out (the mug cooling down) until equilibrium is reached and the whole system is at rest (the mug and the environment it’s in are the same temperature). This way of thinking about entropy is similar to Kahn’s idea of existence will. The brick arch is a lower entropy system than the concrete lintel. It’s the path of least resistence.</p>
+
+                <p>I’ve encountered a similar existence will/entropy in Panettone. As a part of this project, I wanted to take Panettone from its habitat of being street furniture and turn it into home furniture. I wanted to <em>domesticate</em> Panettone. This, I decided, would involve creating one. At first, I just started with trying to make one exactly as is, concrete and all, but I very quickly ran into issues. It turns out, a concrete object of this size weighs over 400 pounds and isn’t easy to make. I quickly tried to think of ways to fight this and make it more practical but still concrete. I tried designing it to be made of a lighter weight concrete and with a hollow center, but it would still be over 200 pounds. But then I realized that maybe this isn’t something I should fight. Maybe Panettone should change based on the habitat. After all, the process of domestication is one of change and adaptation.</p>
+
+                <p>This realization made me think of descriptivism, entropy, and especially Kahn’s existence will. Though there is one critical difference between this and existence will. In the case of existence will, the brick is the agent enacting a force on the situation: it wants to be an arch. However, in the case of the domestication, the new habitat is the agent enacting a force on Panettone: Panettone must adapt to its environment.</p>
+
+                <p>It’s my intention with this project to study that process of adaptation. The creatures of earth came to be through a process of being shaped by their environments; I aim to learn more about the same process in the environments we and our objects live in.</p>
+
+			]]></description>
+		</item>
+
+		<item>
 			<title>Beginning</title>
 			<pubDate>Sat, 08 Feb 2025 01:22:00 CST</pubDate>
 			<guid>5c7d191f-61ef-4cb7-8d0e-465382772dcb</guid>
