@@ -7,8 +7,7 @@
 		<language>en-us</language>
 		<atom:link href="https://liamvennerholm.github.io/sketchbook.xml" rel="self" type="application/rss+xml">
 
-<!--
-		<item>
+		<!-- <item>
 			<title>Title</title>
 			<pubDate>Day, DD Mon YYYY HH:MM:SS CST</pubDate>
 			<guid>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</guid>
@@ -19,8 +18,6 @@
 				<p>Content</p>
 
 			]]></description>
-		</item>
--->
-
+		</item> -->
 	</channel>
 </rss>
