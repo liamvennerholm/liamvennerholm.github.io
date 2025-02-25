@@ -160,7 +160,7 @@ i.material-symbols-outlined { margin-inline: var(--space-width); }
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     gap: 1rem;
-    
+
     & img {
         border-radius: .5rem;
         max-height: 20rem;
@@ -181,25 +181,25 @@ links
 ================================
 */
 
-a {  
+a {
     color: var(--fg-color);
-    text-decoration: underline var(--mg-color) .1rem;
-    
+    text-decoration: underline var(--fg-color) .1rem;
+
     &.link::after {
         content: '→';
     }
-    
+
     &.download::after {
         content: '↓';
     }
-    
+
     &::after {
         display: inline-block;
         text-decoration: none;
         margin-inline-start: var(--space-width);
     }
-    
-    &:hover, &:focus-visible {
+
+    &:hover, &:focus-visible, .breadcrumb & {
         text-decoration: none;
     }
 }
