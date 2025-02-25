@@ -92,6 +92,10 @@ body {
     background-color: var(--bg-color);
     color: var(--fg-color);
     margin: 2.5rem 3rem;
+
+    min-block-size: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 main > :not(:first-child) {
@@ -177,6 +181,11 @@ hr {
             max-height: 12rem;
         }
     }
+}
+
+footer {
+    padding-block-start: 5rem;
+    margin-block-start: auto;
 }
 
 /* 
