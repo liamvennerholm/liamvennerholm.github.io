@@ -183,7 +183,7 @@ links
 
 a {
     color: var(--fg-color);
-    text-decoration: underline var(--fg-color) .1rem;
+    text-decoration: underline var(--fg-color) .075rem;
 
     &.link::after {
         content: '→';
