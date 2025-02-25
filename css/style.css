@@ -87,13 +87,17 @@ layout
 ================================
 */
 
+html {
+    min-block-size: 100%;
+}
+
 body {
     max-inline-size: var(--content-width);
     background-color: var(--bg-color);
     color: var(--fg-color);
     margin: 2.5rem 3rem;
 
-    min-block-size: 100vh;
+    min-block-size: calc(100% - 5rem);
     display: flex;
     flex-direction: column;
 }
