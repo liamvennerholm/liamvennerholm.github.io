@@ -91,7 +91,7 @@ body {
     margin: 2.5rem 3rem;
 }
 
-main > :not(:first-child) {
+main > * {
     margin-block-start: calc(var(--content-gaps) * 2);
 }
 
