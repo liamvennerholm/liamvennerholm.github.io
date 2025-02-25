@@ -91,13 +91,19 @@ body {
     margin: 2.5rem 3rem;
 }
 
-main > :not(:first-child), article > * {
+main > :not(:first-child) {
+    margin-block-start: calc(var(--content-gaps) * 2);
+}
+
+article > * {
     margin-block-start: var(--content-gaps);
 }
 
 .breadcrumb {
     display: inline-block;
     list-style-type: none;
+
+    margin-block-end: 2.5rem;
 
     & li {
         display: inline;
@@ -126,6 +132,10 @@ h5      { font-weight: var(--text-weight-h5);       font-size: .83rem;  }
 h6      { font-weight: var(--text-weight-h6);       font-size: .67rem;  }
 figcaption, footer, #footer, #publish-date, 
 small   { font-weight: var(--text-weight-small);    font-size: .75rem;  }
+
+h1 {
+    line-height: 1;
+}
 
 #publish-date { font-style: italic; }
 
