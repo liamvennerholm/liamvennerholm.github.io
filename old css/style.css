@@ -1,0 +1,235 @@
+/* 
+================================
+resets
+================================
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-feature-settings: 
+    "ss03",
+    "cv09",
+    "cv03",
+    "cv04";
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+    font-style: italic;
+}
+
+/* 
+================================
+fonts and colors
+================================
+*/
+
+:root {
+    font-family: Inter, sans-serif; 
+
+    --text-width: 34rem;
+    --text-weight-small: 600;
+    --text-weight: 500;
+    --text-weight-h1: 350;
+    --text-weight-dropcap: 200;
+
+    --cosmic-latte: #fff5e6;
+    --aero-green: #d8ecd4;
+    --self-luminous-red: #fcdada;
+    --blending-blue: #94bde5;
+    --go-away-green: #8fb198;
+    --panettone-yellow: #f9d879;
+
+    --p-448c: #4b422c;
+    --eichengrau: #16171d;
+    
+    --fg-color: #000;
+    --bg-color: #bbb;
+}
+
+@supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+  }
+  
+.material-symbols-outlined {
+    vertical-align: -.1rem;
+    padding: 0;
+    font-size: 1rem;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 12
+}
+
+/* 
+================================
+layout
+================================
+*/
+
+body {
+    max-width: var(--text-width);
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    font-family: InterVariable, Helvetica, Arial, sans-serif;
+    margin: 2.5rem 3rem;
+}
+
+header {
+    display: flex;
+}
+
+.primary-navigation {
+
+    & ul {
+    list-style: none;
+    display: flex;
+
+        & li {
+            display: inline;
+
+            &:not(:last-child)::after {
+                content: ' → ';
+            }
+        }
+    }
+}
+
+main {
+    & section {
+
+        &:first-child {
+            margin-block-start: 0;
+        }
+        
+        &:not(:first-child) {
+            margin-block-start: 1rem;
+        }
+    }  
+}
+
+footer {
+    margin-block-start: 5rem;
+}
+
+#footer {
+    padding-inline-start: 0;
+    list-style-type: none;
+}
+
+/* 
+================================
+semantic element selectors
+================================
+*/
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: var(--text-weight-h1);
+    margin-block-end: 2rem;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: var(--text-weight);
+    margin-block-end: .5rem;
+    max-width: var(--text-width);
+}
+
+p, blockquote{
+    font-size: 1rem;
+    font-weight: var(--text-weight);
+    margin-block-end: .5rem;
+    line-height: 1.25;
+}
+
+blockquote {
+    font-style: italic;
+    margin-inline: 1rem;
+}
+
+i.material-symbols-outlined {
+    margin-inline-start: .25rem;
+}
+
+small, figcaption, #footer, #date {
+    font-size: .75rem;
+    font-weight: var(--text-weight-small);
+}
+
+hr {
+    border: solid var(--fg-color) .0625rem;
+    margin-block: 1rem;
+}
+
+.carousel, .in-text{
+    border-radius: .5rem;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    margin-block: 1rem;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    gap: 1rem;
+}
+
+.carousel img {
+    border-radius: .5rem;
+    max-height: 20rem;
+
+    @media(max-width:40rem) {
+        max-height: 12rem;
+    }
+}
+
+#date {
+    font-style: italic;
+    margin-block-end: 2rem;
+}
+
+#dropcap{
+    font-size: 2.75rem;
+    font-weight: var(--text-weight-dropcap);
+    line-height: .915;
+    float: left;
+    margin: 0 .25rem -.25rem -.2rem;
+}
+
+/* 
+================================
+links
+================================
+*/
+
+a {  
+    color: var(--fg-color);
+
+    &.link::after {
+        content: '→';
+    }
+
+    &.download::after {
+        content: '↓';
+    }
+
+    &::after {
+        display: inline-block;
+        text-decoration: none;
+        margin-inline-start: .25rem;
+    }
+
+    &:hover, &:focus-visible {
+        text-decoration: none;
+    }
+}
+
+.links {
+    list-style-type: none;
+    margin-block: .5rem;
+    padding-inline-start: 1rem;
+    font-weight: 500;
+}
