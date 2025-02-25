@@ -87,19 +87,11 @@ layout
 ================================
 */
 
-html {
-    min-block-size: 100%;
-}
-
 body {
     max-inline-size: var(--content-width);
     background-color: var(--bg-color);
     color: var(--fg-color);
     margin: 2.5rem 3rem;
-
-    min-block-size: calc(100% - 5rem);
-    display: flex;
-    flex-direction: column;
 }
 
 main > :not(:first-child) {
@@ -144,9 +136,13 @@ h6      { font-weight: var(--text-weight-h6);       font-size: .67rem;  }
 figcaption, footer, #footer, #publish-date, 
 small   { font-weight: var(--text-weight-small);    font-size: .75rem;  }
 
-h1 {
-    line-height: 1;
-}
+h1 { line-height: 1; }
+
+blockquote { margin-inline: var(--content-indent); }
+
+hr { border: solid var(--fg-color) .05rem; }
+
+i.material-symbols-outlined { margin-inline: var(--space-width); }
 
 #publish-date { font-style: italic; }
 
@@ -154,18 +150,6 @@ h1 {
     line-height: .915;
     float: left;
     margin: 0 .25rem -.25rem -.2rem;
-}
-
-blockquote {
-    margin-inline: var(--content-indent);
-}
-
-i.material-symbols-outlined {
-    margin-inline: var(--space-width);
-}
-
-hr {
-    border: solid var(--fg-color) .05rem;
 }
 
 .carousel, .in-text{
@@ -188,8 +172,7 @@ hr {
 }
 
 footer {
-    padding-block-start: 5rem;
-    margin-block-start: auto;
+    margin-block-start: 5rem;
 }
 
 /* 
