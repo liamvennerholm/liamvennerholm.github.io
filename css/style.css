@@ -91,7 +91,7 @@ body {
     margin: 2.5rem 3rem;
 }
 
-main > * {
+main > :not(:first-child) {
     margin-block-start: calc(var(--content-gaps) * 2);
 }
 
@@ -103,7 +103,7 @@ article > * {
     display: inline-block;
     list-style-type: none;
 
-    margin-block-end: 2.5rem;
+    margin-block-end: calc(var(--content-gaps) * 2);
 
     & li {
         display: inline;
