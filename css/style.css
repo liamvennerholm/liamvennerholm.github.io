@@ -153,6 +153,7 @@ i.material-symbols-outlined { margin-inline: var(--space-width); }
 }
 
 .carousel, .in-text{
+    list-style-type: none;
     border-radius: .5rem;
     display: flex;
     overflow: auto;
