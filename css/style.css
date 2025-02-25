@@ -53,10 +53,12 @@ variables, fonts, & variable fonts
     --p-448c: #4b422c;
     --eichengrau: #16171d;
     --black: #000;
-    --gray: #bbb;
+    --mid-gray: #999;
+    --light-gray: #bbb;
 
     --fg-color: var(--black);
-    --bg-color: var(--gray);
+    --mg-color: var(--mid-gray);
+    --bg-color: var(--light-gray);
 
     --font-text: Inter, sans-serif;
     --font-heading: Inter, sans-serif;
@@ -185,7 +187,7 @@ links
 
 a {  
     color: var(--fg-color);
-    text-decoration: underline .1rem;
+    text-decoration: underline var(--mg-color) .1rem;
     
     &.link::after {
         content: '→';
