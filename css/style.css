@@ -153,7 +153,6 @@ i.material-symbols-outlined { margin-inline: var(--space-width); }
 }
 
 .carousel, .in-text{
-    list-style-type: none;
     border-radius: .5rem;
     display: flex;
     overflow: auto;
@@ -162,6 +161,10 @@ i.material-symbols-outlined { margin-inline: var(--space-width); }
     -ms-overflow-style: -ms-autohiding-scrollbar;
     gap: 1rem;
 
+    & ul {
+        list-style-type: none;
+    }
+    
     & img {
         border-radius: .5rem;
         max-height: 20rem;
