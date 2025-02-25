@@ -4,7 +4,7 @@
         <title>LV → Lorem Ipsum</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <base href="https://liamvennerholm.github.io/">
+        <!-- <base href="https://liamvennerholm.github.io/"> -->
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
         <link rel="preconnect" href="https://rsms.me/">
@@ -17,24 +17,33 @@
         <link rel="alternate" type="application/rss+xml" title="LV → Sketchbook" href="https://liamvennerholm.github.io/sketchbook.xml">
         <link rel="alternate" type="application/rss+xml" title="LV → Camera" href="https://liamvennerholm.github.io/camera.xml">
 
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
-            <nav class="primary-navigation" aria-label="Primary Navigation">
-                <ul>
-                    <h1>
-                        <li><a href="/index.html">Liam Vennerholm</a></li>
-                        <li><a href="#">Lorem Ipsum</a></li>
-                    </h1>
+            <h1>
+                <ul class="breadcrumb">
+                    <li><a href="/index.html" class="breadcrumb-item">Liam Vennerholm</a></li>
+                    <li><a href="#" class="breadcrumb-item">Lorem Ipsum</a></li>
                 </ul>
-            </nav>
+            </h1>
         </header>
 
         <main>
         <!-- list of links -->
             <section>
-                <h2>Lorem</h2>
+                <h1>Lorem 1</h1>
+                <p>Lorem</p>
+                <h2>Lorem 2</h2>
+                <p>Lorem</p>
+                <h3>Lorem 3</h3>
+                <p>Lorem</p>
+                <h4>Lorem 4</h4>
+                <p>Lorem</p>
+                <h5>Lorem 5</h5>
+                <p>Lorem</p>
+                <h6>Lorem 6</h6>
+                <p>Lorem</p>
                 <ul class="links">
                     <li><a class="link" href="#" target="_blank">lorem ipsum</a></li>
                     <li><a class="link" href="#" target="_blank">lorem ipsum</a></li>
@@ -44,29 +53,39 @@
             </section>
 
         <!-- blog post -->
-            <p id="date">mm/dd/yyyy</p>
+            <time datetime="yyyy-mm-dd" id="publish-date">mm/dd/yyyy</time>
             <article>
                 <p><span id="dropcap">L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Odio neque illum a necessitatibus, expedita ut ipsum rem eum praesentium, reiciendis voluptate iste aliquam voluptas error. Vitae porro laborum soluta iure.</p>
-
+                <hr>
                 <div class="carousel">
                     <img src="#" alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
                     <img src="#" alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
                 </div>
                 <a href="#" target="_blank"><figcaption><em>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</em></figcaption></a>
-
                 <img class="in-text" src="#" alt="Lorem ipsum dolor sit, amet consectetur adipisicing elit.">
                 <a href="#" target="_blank"><figcaption><em>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</em></figcaption></a>
+
+                <div class="carousel">
+                    <img src="blog/panettone/images/SA2022/08.jpeg" alt="A group of small, yellow, concrete bollards.">
+                    <img src="blog/panettone/images/SA2022/10.jpeg" alt="Two small, yellow, concrete bollards. One is in the grass, the other is in a small area where the curb of the street cuts back, as if it’s a little nook just for the bollard.">
+                    <img src="blog/panettone/images/SA2022/16.jpeg" alt="A view down a fork in the road in Como, Italy. Coming toward the viewer is a staggered row of small, yellow, concrete bollards.">
+                    <img src="blog/panettone/images/SA2022/17.jpeg" alt="A small, bare concrete bollard sitting next to a bike rack.">
+                    <img src="blog/panettone/images/SA2022/24.jpeg" alt="A small, concrete bollard that looks it used to be painted yellow, but the paint has worn away.">
+                    <img src="blog/panettone/images/SA2022/31.jpeg" alt="A view crossing a crosswalk in Como, Italy. There is a building on the right and a busy roas on the left. On the sidewalk on the other site of the crosswalk, there are two small, concrete bollards with weathered yellow paint jobs holding up a large, blue street sign together.">
+                    <img src="blog/panettone/images/SA2022/35.jpeg" alt="In the middle of a street in Como, Italy stands a small, yellow, concrete bollard holding up a “do not enter” sign.">
+                </div>
 
                 <blockquote>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit obcaecati esse provident, perferendis sint incidunt maiores quaerat aliquam necessitatibus optio blanditiis officia! Quis minus quas error laborum veritatis, dolor aperiam?</p>
                 </blockquote>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, in. Qui molestiae recusandae nesciunt illum sit dicta, placeat nihil suscipit consectetur ab, enim quia sapiente, repellat repellendus obcaecati officiis harum.</p>
+                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aperiam fuga, iusto laborum reprehenderit voluptas saepe nobis blanditiis veniam maxime et dolor nihil sint officiis recusandae dolore aspernatur incidunt illum.</small>
             </article>
         </main>
 
         <footer>
-            <ul id="footer">
+            <ul class="links">
                 <li><a class="link" href="https://www.instagram.com/liamvennerholm/" target="_blank">Instagram</a></li>
                 <li><a class="link" href="https://bsky.app/profile/liamvennerholm.bsky.social" target="_blank">BlueSky</a></li>
             </ul>

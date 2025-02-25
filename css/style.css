@@ -1,0 +1,206 @@
+/* 
+================================
+resets
+================================
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-feature-settings: "ss03", "cv09", "cv03", "cv04";
+}
+
+img {
+    max-inline-size: 100%;
+    display: block;
+    font-style: italic;
+}
+
+/* 
+================================
+variables, fonts, & variable fonts
+================================
+*/
+
+:root {
+    --content-gaps: .75rem;
+    --content-width: 50ch;
+    --content-indent: 2ch;
+    --content-outdent: -2ch;
+    --space-width: .5ch;
+    --text-weight-small: 550;
+    --text-weight-p: 400;
+    --text-weight-h1: 250;  /*12/6*/
+    --text-weight-h2: 325;  /*9/6*/
+    --text-weight-h3: 375;  /*7/6*/
+    --text-weight-h4: 400;  /*6/6*/
+    --text-weight-h5: 450;  /*5/6*/
+    --text-weight-h6: 500;  /*4/6*/
+
+    /* light colors */
+    --cosmic-latte: #fff5e6;
+    --aero-green: #d8ecd4;
+    --self-luminous-red: #fcdada;
+    --blending-blue: #94bde5;
+    --go-away-green: #8fb198;
+    --panettone-yellow: #f9d879;
+
+    /* dark colors */
+    --p-448c: #4b422c;
+    --eichengrau: #16171d;
+    --black: #000;
+    --gray: #bbb;
+
+    --fg-color: var(--black);
+    --bg-color: var(--gray);
+
+    --font-text: Inter, sans-serif;
+    --font-heading: Inter, sans-serif;
+
+    font-family: Inter, sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+}
+
+.material-symbols-outlined {
+    vertical-align: -.1rem;
+    padding: 0;
+    font-size: 1rem;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 12
+}
+
+/* 
+================================
+layout
+================================
+*/
+
+body {
+    max-inline-size: var(--content-width);
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    margin: 2.5rem 3rem;
+}
+
+main > :not(:first-child), article > * {
+    margin-block-start: var(--content-gaps);
+}
+
+.breadcrumb {
+    display: inline-block;
+    list-style-type: none;
+
+    & li {
+        display: inline;
+
+        &:not(:last-child)::after {
+            content: '→';
+            margin-inline: var(--space-width);
+        }
+    }
+}
+
+/* 
+================================
+semantic selectors
+================================
+*/
+
+blockquote, 
+p       { font-weight: var(--text-weight-p);        font-size: 1rem;    }
+#dropcap{ font-weight: var(--text-weight-dropcap);  font-size: 2.75rem; }
+h1      { font-weight: var(--text-weight-h1);       font-size: 2rem;    }
+h2      { font-weight: var(--text-weight-h2);       font-size: 1.5rem;  }
+h3      { font-weight: var(--text-weight-h3);       font-size: 1.17rem; }
+h4      { font-weight: var(--text-weight-h4);       font-size: 1rem;    }
+h5      { font-weight: var(--text-weight-h5);       font-size: .83rem;  }
+h6      { font-weight: var(--text-weight-h6);       font-size: .67rem;  }
+figcaption, footer, #footer, #publish-date, 
+small   { font-weight: var(--text-weight-small);    font-size: .75rem;  }
+
+#publish-date { font-style: italic; }
+
+#dropcap {
+    line-height: .915;
+    float: left;
+    margin: 0 .25rem -.25rem -.2rem;
+}
+
+blockquote {
+    margin-inline: var(--content-indent);
+}
+
+i.material-symbols-outlined {
+    margin-inline: var(--space-width);
+}
+
+hr {
+    border: solid var(--fg-color) .05rem;
+}
+
+.carousel, .in-text{
+    border-radius: .5rem;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    gap: 1rem;
+    
+    & img {
+        border-radius: .5rem;
+        max-height: 20rem;
+        
+        @media(max-width:40rem) {
+            max-height: 12rem;
+        }
+    }
+}
+
+/* 
+================================
+links
+================================
+*/
+
+a {  
+    color: var(--fg-color);
+    text-decoration: underline .1rem;
+    
+    &.link::after {
+        content: '→';
+    }
+    
+    &.download::after {
+        content: '↓';
+    }
+    
+    &::after {
+        display: inline-block;
+        text-decoration: none;
+        margin-inline-start: var(--space-width);
+    }
+    
+    &:hover, &:focus-visible {
+        text-decoration: none;
+    }
+}
+
+.links {
+    list-style-type: none;
+    margin-block: var(--content-gaps);
+    padding-inline-start: var(--content-indent);
+}
+
+footer .links {
+    padding-inline-start: 0;
+}
