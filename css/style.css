@@ -124,17 +124,17 @@ semantic selectors
 ================================
 */
 
-blockquote, 
-p       { font-weight: var(--text-weight-p);        font-size: 1rem;    }
-#dropcap{ font-weight: var(--text-weight-dropcap);  font-size: 2.75rem; }
 h1      { font-weight: var(--text-weight-h1);       font-size: 2rem;    }
 h2      { font-weight: var(--text-weight-h2);       font-size: 1.5rem;  }
 h3      { font-weight: var(--text-weight-h3);       font-size: 1.17rem; }
 h4      { font-weight: var(--text-weight-h4);       font-size: 1rem;    }
 h5      { font-weight: var(--text-weight-h5);       font-size: .83rem;  }
 h6      { font-weight: var(--text-weight-h6);       font-size: .67rem;  }
-figcaption, footer, #footer, #publish-date, 
-small   { font-weight: var(--text-weight-small);    font-size: .75rem;  }
+#dropcap{ font-weight: var(--text-weight-dropcap);  font-size: 2.75rem; }
+blockquote, p
+        { font-weight: var(--text-weight-p);        font-size: 1rem;    }
+figcaption, footer, #footer, #publish-date, small, sup
+        { font-weight: var(--text-weight-small);    font-size: .75rem;  }
 
 h1 { line-height: 1; }
 
@@ -143,6 +143,15 @@ blockquote { margin-inline: var(--content-indent); }
 hr { border: solid var(--fg-color) .05rem; }
 
 i.material-symbols-outlined { margin-inline: var(--space-width); }
+
+ul.resume{
+    padding-inline-start: 2ch;
+    list-style-type: square;
+
+    & li::marker {
+        content: '- ';
+    }
+}
 
 #publish-date { font-style: italic; }
 
@@ -182,8 +191,10 @@ links
 */
 
 a {
-    color: var(--fg-color);
-    text-decoration: underline var(--fg-color) .075rem;
+    &, .breadcrumb &:hover,  .breadcrumb &:focus-visible {
+        color: var(--fg-color);
+        text-decoration: underline var(--fg-color) .09rem;
+    }
 
     &.link::after {
         content: '→';
@@ -196,7 +207,6 @@ a {
     &::after {
         display: inline-block;
         text-decoration: none;
-        margin-inline-start: var(--space-width);
     }
 
     &:hover, &:focus-visible, .breadcrumb & {
