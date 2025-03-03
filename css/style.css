@@ -146,10 +146,11 @@ i.material-symbols-outlined { margin-inline: var(--space-width); }
 
 ul.resume{
     padding-inline-start: 2ch;
+    list-style-type: '-';
 
-    & li::marker {
+/*    & li::marker {
         content: '- ';
-    }
+    }*/
 }
 
 #publish-date { font-style: italic; }
