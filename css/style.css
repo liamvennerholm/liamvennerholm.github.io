@@ -146,7 +146,7 @@ i.material-symbols-outlined { margin-inline: var(--space-width); }
 
 ul.resume{
     padding-inline-start: 2ch;
-    list-style-type: square;
+    list-style-type: none;
 
     & li::marker {
         content: '- ';
