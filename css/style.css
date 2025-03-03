@@ -40,7 +40,7 @@ variables, fonts, & variable fonts
     --text-weight-h4: 400;  /*6/6*/
     --text-weight-h5: 450;  /*5/6*/
     --text-weight-h6: 500;  /*4/6*/
-
+    
     /* light colors */
     --cosmic-latte: #fff5e6;
     --aero-green: #d8ecd4;
@@ -48,21 +48,21 @@ variables, fonts, & variable fonts
     --blending-blue: #94bde5;
     --go-away-green: #8fb198;
     --panettone-yellow: #f9d879;
-
+    
     /* dark colors */
     --p-448c: #4b422c;
     --eichengrau: #16171d;
     --black: #000;
     --mid-gray: #999;
     --light-gray: #bbb;
-
+    
     --fg-color: var(--black);
     --mg-color: var(--mid-gray);
     --bg-color: var(--light-gray);
-
+    
     --font-text: Inter, sans-serif;
     --font-heading: Inter, sans-serif;
-
+    
     font-family: Inter, sans-serif;
 }
 
@@ -81,6 +81,32 @@ variables, fonts, & variable fonts
     'opsz' 12
 }
 
+i.material-symbols-outlined { margin-inline: var(--space-width); }
+
+h1      { font-weight: var(--text-weight-h1);       font-size: 2rem;    }
+h2      { font-weight: var(--text-weight-h2);       font-size: 1.5rem;  }
+h3      { font-weight: var(--text-weight-h3);       font-size: 1.17rem; }
+h4      { font-weight: var(--text-weight-h4);       font-size: 1rem;    }
+h5      { font-weight: var(--text-weight-h5);       font-size: .83rem;  }
+h6      { font-weight: var(--text-weight-h6);       font-size: .67rem;  }
+#dropcap{ font-weight: var(--text-weight-dropcap);  font-size: 2.75rem; }
+blockquote, p
+{ font-weight: var(--text-weight-p);        font-size: 1rem;    }
+figcaption, footer, #footer, #publish-date, small, sup
+{ font-weight: var(--text-weight-small);    font-size: .75rem;  }
+
+h1 { line-height: 1; }
+
+#publish-date { font-style: italic; }
+
+#dropcap {
+    line-height: .915;
+    float: left;
+    margin: 0 .25rem -.25rem -.2rem;
+}
+
+blockquote { margin-inline: var(--content-indent); }
+
 /* 
 ================================
 layout
@@ -94,11 +120,7 @@ body {
     margin: 2.5rem 3rem;
 }
 
-main > :not(:first-child) {
-    margin-block-start: calc(var(--content-gaps) * 2);
-}
-
-article > * {
+main > :not(:first-child), article > * {
     margin-block-start: var(--content-gaps);
 }
 
@@ -124,38 +146,7 @@ semantic selectors
 ================================
 */
 
-h1      { font-weight: var(--text-weight-h1);       font-size: 2rem;    }
-h2      { font-weight: var(--text-weight-h2);       font-size: 1.5rem;  }
-h3      { font-weight: var(--text-weight-h3);       font-size: 1.17rem; }
-h4      { font-weight: var(--text-weight-h4);       font-size: 1rem;    }
-h5      { font-weight: var(--text-weight-h5);       font-size: .83rem;  }
-h6      { font-weight: var(--text-weight-h6);       font-size: .67rem;  }
-#dropcap{ font-weight: var(--text-weight-dropcap);  font-size: 2.75rem; }
-blockquote, p
-        { font-weight: var(--text-weight-p);        font-size: 1rem;    }
-figcaption, footer, #footer, #publish-date, small, sup
-        { font-weight: var(--text-weight-small);    font-size: .75rem;  }
-
-h1 { line-height: 1; }
-
-blockquote { margin-inline: var(--content-indent); }
-
 hr { border: solid var(--fg-color) .05rem; }
-
-i.material-symbols-outlined { margin-inline: var(--space-width); }
-
-ul.resume{
-    padding-inline-start: 2ch;
-    list-style-type: '- ';
-}
-
-#publish-date { font-style: italic; }
-
-#dropcap {
-    line-height: .915;
-    float: left;
-    margin: 0 .25rem -.25rem -.2rem;
-}
 
 .carousel, .in-text{
     border-radius: .5rem;
@@ -165,7 +156,7 @@ ul.resume{
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     gap: 1rem;
-
+    
     & img {
         border-radius: .5rem;
         max-height: 20rem;
@@ -176,15 +167,16 @@ ul.resume{
     }
 }
 
-footer {
-    margin-block-start: 5rem;
-}
+footer { margin-block-start: 5rem; }    
 
-/* 
-================================
-links
-================================
-*/
+ul {
+    list-style-type: none;
+
+    &.resume{
+        padding-inline-start: var(--content-indent);
+        list-style-type: '- ';
+    }
+}
 
 a {
     &, .breadcrumb &:hover,  .breadcrumb &:focus-visible {
@@ -192,17 +184,13 @@ a {
         text-decoration: underline var(--fg-color) .09rem;
     }
 
-    &.link::after {
-        content: '→';
-    }
-
-    &.download::after {
-        content: '↓';
-    }
+    &.link::after       { content: '→'; }
+    &.download::after   { content: '↓'; }
 
     &::after {
         display: inline-block;
         text-decoration: none;
+        padding-inline-start: var(--space-width);
     }
 
     &:hover, &:focus-visible, .breadcrumb & {
@@ -214,8 +202,6 @@ a {
     list-style-type: none;
     margin-block: var(--content-gaps);
     padding-inline-start: var(--content-indent);
-}
 
-footer .links {
-    padding-inline-start: 0;
+    footer & { padding-inline-start: 0; }
 }
