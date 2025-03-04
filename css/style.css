@@ -95,7 +95,7 @@ blockquote, p
 figcaption, footer, #footer, #publish-date, small, sup
 { font-weight: var(--text-weight-small);    font-size: .75rem;  }
 
-h1 { line-height: 1; }
+h1 { line-height: 1.125; }
 
 #publish-date { font-style: italic; }
 
