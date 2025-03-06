@@ -132,6 +132,7 @@ article > p:last-of-type::after {
     inline-size: .75rem;
     margin-inline-start: var(--space-width);
 
+    content: '';
     -webkit-mask: url(/panettone.svg) no-repeat 50% 50%;
     mask: url(/panettone.svg) no-repeat 50% 50%;
     -webkit-mask-size: cover;
