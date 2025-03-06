@@ -122,7 +122,7 @@ body {
     margin: 2.5rem 3rem;
 }
 
-main > :not(:first-child), article > * {
+main > :not(:first-child), article > *, section > :not(:first-child) {
     margin-block-start: var(--content-gaps);
 }
 
