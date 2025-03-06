@@ -130,7 +130,7 @@ article > p:last-of-type::after {
     display: inline-block;
     block-size: .75rem;
     inline-size: .75rem;
-    color: var(--panettone-yellow);
+    fill: var(--panettone-yellow);
     margin-inline-start: var(--space-width);
     content: url(/panettone.svg);
 }
