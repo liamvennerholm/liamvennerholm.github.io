@@ -131,12 +131,8 @@ article > p:last-of-type::after {
     block-size: 1rem;
     inline-size: 1rem;
     color: var(--fg-color);
-    -webkit-mask: url(/panettone.svg) norepeat center;
-    mask: url(/panettone.svg) norepeat center;
-    -webkit-mask-size: contain;
-    mask-size: contain;
     margin-inline-start: var(--space-width);
-    content: "";
+    content: url(/panettone.svg);
 }
 
 .breadcrumb {
