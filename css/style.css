@@ -174,7 +174,7 @@ footer { margin-block-start: 5rem; }
 ul {
     list-style-type: none;
 
-    &.resume{ list-style-type: '- '; }
+    &.resume { list-style-type: '- '; }
 }
 
 a {
