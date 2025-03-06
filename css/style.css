@@ -105,6 +105,8 @@ h1 { line-height: 1.125; }
     margin: 0 .25rem -.25rem -.2rem;
 }
 
+.float-right { float: right; }
+
 blockquote { margin-inline: var(--content-indent); }
 
 /* 
