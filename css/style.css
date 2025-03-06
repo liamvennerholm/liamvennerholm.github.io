@@ -122,7 +122,7 @@ body {
     margin: 2.5rem 3rem;
 }
 
-main > :not(:first-child), article > *, ul class="resume-section" > {
+main > :not(:first-child), article > *, .resume-section > {
     margin-block-start: var(--content-gaps);
 }
 
