@@ -130,9 +130,16 @@ article > p:last-of-type::after {
     display: inline-block;
     block-size: .75rem;
     inline-size: .75rem;
-    fill: var(--panettone-yellow);
     margin-inline-start: var(--space-width);
-    content: url(/panettone.svg);
+
+    -webkit-mask: url(/panettone.svg) no-repeat 50% 50%;
+    mask: url(/panettone.svg) no-repeat 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: var(--panettone-yellow);
+
+    /* content: url(/panettone.svg);
+    fill: var(--panettone-yellow); */
 }
 
 .breadcrumb {
