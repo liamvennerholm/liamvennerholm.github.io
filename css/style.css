@@ -174,7 +174,10 @@ footer { margin-block-start: 5rem; }
 ul {
     list-style-type: none;
 
-    &.resume { list-style-type: '- '; }
+    &.resume{
+        padding-inline-start: var(--content-indent);
+        list-style-type: '- ';
+    }
 }
 
 a {
