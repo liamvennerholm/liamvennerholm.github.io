@@ -1,7 +1,7 @@
 /* 
-================================
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 resets
-================================
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 */
 
 *,
@@ -20,9 +20,9 @@ img {
 }
 
 /* 
-================================
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 variables, fonts, & variable fonts
-================================
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 */
 
 :root {
@@ -110,10 +110,10 @@ h1 { line-height: 1.125; }
 blockquote { margin-inline: var(--content-indent); }
 
 /* 
-================================
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 layout
-================================
-*/
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+*/  
 
 body {
     max-inline-size: var(--content-width);
@@ -138,9 +138,6 @@ article > p:last-of-type::after {
     -webkit-mask-size: cover;
     mask-size: cover;
     background-color: var(--panettone-yellow);
-
-    /* content: url(/panettone.svg);
-    fill: var(--panettone-yellow); */
 }
 
 .breadcrumb {
@@ -160,9 +157,9 @@ article > p:last-of-type::after {
 }
 
 /* 
-================================
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 semantic selectors
-================================
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 */
 
 hr { border: solid var(--fg-color) .05rem; }
