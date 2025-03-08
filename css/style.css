@@ -26,7 +26,7 @@ variables, fonts, & variable fonts
 */
 
 :root {
-    --content-gaps: .75rem;
+    --content-gaps: .5rem;
     --content-width: 50ch;
     --content-indent: 2ch;
     --content-outdent: -2ch;
@@ -186,11 +186,16 @@ hr { border: solid var(--fg-color) .05rem; }
 footer { margin-block-start: 5rem; }    
 
 ul {
-    list-style-type: '- ';
+    list-style-type: none;
     padding-inline-start: var(--content-indent);
+    
+    header & {
+        margin: 0;
+        padding: 0;
+    }
 
     &.resume{
-        /* list-style-type: '- '; */
+        list-style-type: '- ';
     }
 }
 
@@ -215,7 +220,7 @@ a {
 }
 
 .links {
-    /* list-style-type: none; */
+    /* list-style-type: '→ '; */
     margin-block: var(--content-gaps);
 
     footer & { padding-inline-start: 0; }
