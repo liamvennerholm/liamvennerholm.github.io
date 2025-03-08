@@ -186,11 +186,11 @@ hr { border: solid var(--fg-color) .05rem; }
 footer { margin-block-start: 5rem; }    
 
 ul {
-    list-style-type: none;
+    list-style-type: '- ';
+    padding-inline-start: var(--content-indent);
 
     &.resume{
-        padding-inline-start: var(--content-indent);
-        list-style-type: '- ';
+        /* list-style-type: '- '; */
     }
 }
 
@@ -215,9 +215,8 @@ a {
 }
 
 .links {
-    list-style-type: none;
+    /* list-style-type: none; */
     margin-block: var(--content-gaps);
-    padding-inline: var(--content-indent);
 
     footer & { padding-inline-start: 0; }
 }
