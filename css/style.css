@@ -27,7 +27,7 @@ variables, fonts, & variable fonts
 
 :root {
     --content-gaps: .5rem;
-    --content-width: 50ch;
+    --content-width: 27rem;
     --content-indent: 2ch;
     --content-outdent: -2ch;
     --space-width: .5ch;
