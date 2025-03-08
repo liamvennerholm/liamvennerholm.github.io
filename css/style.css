@@ -81,7 +81,7 @@ variables, fonts, & variable fonts
     'opsz' 12
 }
 
-i.material-symbols-outlined { margin-inline: var(--space-width); }
+i.material-symbols-outlined { margin-inline-start: var(--space-width); }
 
 h1      { font-weight: var(--text-weight-h1);       font-size: 2rem;    }
 h2      { font-weight: var(--text-weight-h2);       font-size: 1.5rem;  }
