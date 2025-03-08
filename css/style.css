@@ -136,7 +136,7 @@ main > :not(:first-child), article > *, .resume-section > * {
     margin-block-start: var(--content-gaps);
 }
 
-article > p:last-of-type::after {
+.panettone-icon-after > p:last-of-type::after {
     display: inline-block;
     block-size: .75rem;
     inline-size: .75rem;
