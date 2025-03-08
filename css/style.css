@@ -106,6 +106,16 @@ h1 { line-height: 1.125; }
 }
 
 .float-right { float: right; }
+.float-center { margin-inline: auto; }
+.even-spacing-horizontal {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-icon { 
+    display: inline-block;
+    block-size: 4rem;
+}
 
 blockquote { margin-inline: var(--content-indent); }
 
