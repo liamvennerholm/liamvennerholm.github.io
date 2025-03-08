@@ -106,7 +106,9 @@ h1 { line-height: 1.125; }
 }
 
 .float-right { float: right; }
+
 .float-center { margin-inline: auto; }
+
 .even-spacing-horizontal {
     display: flex;
     justify-content: space-evenly;
@@ -185,7 +187,7 @@ hr { border: solid var(--fg-color) .05rem; }
 
     & img {
         border-radius: .5rem;
-        max-height: 20rem;
+        max-height: 18rem;
         
         @media(max-width:40rem) {
             max-height: 12rem;
