@@ -217,7 +217,7 @@ a {
 .links {
     list-style-type: none;
     margin-block: var(--content-gaps);
-    padding-inline-start: var(--content-indent);
+    padding-inline: var(--content-indent);
 
     footer & { padding-inline-start: 0; }
 }
