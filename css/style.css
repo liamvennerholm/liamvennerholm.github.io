@@ -292,7 +292,7 @@ a {
 
 /* 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-custom list elements
+custom icon elements
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 */
 
@@ -312,4 +312,22 @@ article.icon-soccer-stadium > p:last-of-type::after {
     margin-inline-start: var(--space-width);
 
     content: url(/projects/soccer_stadium/icon.svg);
+}
+
+li.icon-pet-chair::before {
+    display: inline-block;
+    block-size: var(--icon-size);
+    inline-size: var(--icon-size);
+    margin-inline-end: var(--space-width);
+
+    content: url(/projects/pet_chair/icon.svg);
+}
+
+article.icon-pet-chair > p:last-of-type::after {
+    display: inline-block;
+    block-size: var(--icon-size);
+    inline-size: var(--icon-size);
+    margin-inline-start: var(--space-width);
+
+    content: url(/projects/pet_chair/icon.svg);
 }
