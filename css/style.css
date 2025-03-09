@@ -229,13 +229,13 @@ article img {
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    gap: 1rem;
+    gap: var(--content-gaps);
 
     & img {
-        max-height: 18rem;
+        /* max-height: 18rem; */
         
         @media(max-width:40rem) {
-            max-height: 12rem;
+            /* max-height: 12rem; */
         }
     }
 }
@@ -296,11 +296,20 @@ custom list elements
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 */
 
-.soccer-stadium::before {
+li.icon-soccer-stadium::before {
     display: inline-block;
     block-size: var(--icon-size);
     inline-size: var(--icon-size);
     margin-inline-end: var(--space-width);
+
+    content: url(/projects/soccer_stadium/icon.svg);
+}
+
+article.icon-soccer-stadium > p:last-of-type::after {
+    display: inline-block;
+    block-size: var(--icon-size);
+    inline-size: var(--icon-size);
+    margin-inline-start: var(--space-width);
 
     content: url(/projects/soccer_stadium/icon.svg);
 }
