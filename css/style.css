@@ -18,6 +18,7 @@ img {
     display: block;
     font-style: italic;
     object-fit: contain;
+    border-radius: .5rem;
 }
 
 /* 
@@ -218,10 +219,6 @@ in text elements
 */
 
 hr { border: solid var(--fg-color) .05rem; }
-
-article img {
-    border-radius: .5rem;
-}
 
 .carousel{
     display: flex;
