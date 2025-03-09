@@ -215,7 +215,11 @@ in text elements
 
 hr { border: solid var(--fg-color) .05rem; }
 
-.carousel, .in-text{
+article img {
+    border-radius: .5rem;
+}
+
+.carousel{
     display: flex;
     border-radius: .5rem;
     overflow: auto;
@@ -225,7 +229,6 @@ hr { border: solid var(--fg-color) .05rem; }
     gap: 1rem;
 
     & img {
-        border-radius: .5rem;
         max-height: 18rem;
         
         @media(max-width:40rem) {
