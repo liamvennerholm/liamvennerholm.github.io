@@ -258,10 +258,10 @@ ul {
     &.resume{
         list-style-type: '- ';
     }
+}
 
-    &.resume-section {
-        padding-inline-start: none;
-    }
+.resume-section {
+    padding-inline-start: none;
 }
 
 a {
