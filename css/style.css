@@ -17,7 +17,8 @@ img {
     max-inline-size: 100%;
     display: block;
     font-style: italic;
-    object-fit: cover;
+    height: auto;
+    /* object-fit: cover; */
 }
 
 /* 
@@ -231,14 +232,6 @@ article img {
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     gap: var(--content-gaps);
-
-    & img {
-        /* max-height: 18rem; */
-        
-        @media(max-width:40rem) {
-            /* max-height: 12rem; */
-        }
-    }
 }
 
 .drawing {
