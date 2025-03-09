@@ -18,7 +18,6 @@ img {
     display: block;
     font-style: italic;
     object-fit: contain;
-    border-radius: .5rem;
 }
 
 /* 
@@ -228,6 +227,10 @@ hr { border: solid var(--fg-color) .05rem; }
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     gap: var(--content-gaps);
+
+    & img {
+        border-radius: .5rem;
+    }
 }
 
 .drawing {
