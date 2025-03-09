@@ -231,7 +231,7 @@ hr { border: solid var(--fg-color) .05rem; }
     & img {
         border-radius: .5rem;
         height: 100%;
-        width: 75%;
+        width: 90%;
     }
 }
 
