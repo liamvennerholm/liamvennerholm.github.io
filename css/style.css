@@ -18,7 +18,7 @@ img {
     display: block;
     font-style: italic;
     height: auto;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 
 /* 
