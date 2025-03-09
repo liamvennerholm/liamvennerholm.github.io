@@ -249,7 +249,7 @@ footer { margin-block-start: 5rem; }
 ul {
     list-style-type: none;
     padding-inline-start: var(--content-indent);
-    
+
     header & {
         margin: 0;
         padding: 0;
@@ -257,6 +257,10 @@ ul {
 
     &.resume{
         list-style-type: '- ';
+    }
+
+    &.resume-section {
+        padding-inline-start: none;
     }
 }
 
