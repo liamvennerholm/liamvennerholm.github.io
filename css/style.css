@@ -247,7 +247,7 @@ article img {
 footer { margin-block-start: 5rem; }    
 
 ul {
-    &:not(.resume-section) {
+    &, &:not(.resume-section) {
         list-style-type: none;
         padding-inline-start: var(--content-indent);
     }
