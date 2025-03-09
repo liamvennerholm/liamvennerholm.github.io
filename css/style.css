@@ -17,8 +17,7 @@ img {
     max-inline-size: 100%;
     display: block;
     font-style: italic;
-    height: auto;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /* 
