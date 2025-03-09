@@ -31,6 +31,8 @@ variables, fonts, & variable fonts
     --content-indent: 2ch;
     --content-outdent: -2ch;
     --space-width: .5ch;
+    --icon-size: .75rem;
+
     --text-weight-small: 500;
     --text-weight-p: 400;
     --text-weight-dropcap: 175;
@@ -196,8 +198,8 @@ main > :not(:first-child), article > *, .resume-section > * {
 
 .panettone-icon-after > p:last-of-type::after {
     display: inline-block;
-    block-size: .75rem;
-    inline-size: .75rem;
+    block-size: var(--icon-size);
+    inline-size: var(--icon-size);
     margin-inline-start: var(--space-width);
 
     content: '';
@@ -282,4 +284,19 @@ a {
     margin-block: var(--content-gaps);
 
     footer & { padding-inline-start: 0; }
+}
+
+/* 
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+custom list elements
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+*/
+
+.soccer-stadium::before {
+    display: inline-block;
+    block-size: var(--icon-size);
+    inline-size: var(--icon-size);
+    margin-inline-end: var(--space-width);
+
+    content: url(/projects/soccer_stadium/icon.svg);
 }
