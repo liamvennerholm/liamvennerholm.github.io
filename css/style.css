@@ -95,8 +95,9 @@ variables, fonts, & variable fonts
 .wip {
     font-style: italic;
 
-    &::after {
+    &::before {
         content: "warning";
+        margin-inline-end: var(--space-width);
 
         font-family: 'Material Symbols Outlined';
         font-style: normal;
