@@ -17,6 +17,7 @@ img {
     max-inline-size: 100%;
     display: block;
     font-style: italic;
+    object-fit: cover;
 }
 
 /* 
