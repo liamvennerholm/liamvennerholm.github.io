@@ -236,7 +236,10 @@ hr { border: solid var(--fg-color) .05rem; }
     & img {
         border-radius: .5rem;
         height: 100%;
-        width: 90%;
+        
+        &:first-of-type {
+            width: 90%;
+        }
     }
 }
 
