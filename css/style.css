@@ -306,10 +306,6 @@ custom icon elements
     margin-inline-end: var(--space-width);
 
     content: url(/projects/soccer-stadium/icon.svg);
-
-    h1 & {
-        size: calc(var(--icon-size) * 2);
-    }
 }
 
 .icon_pet-chair::before {
@@ -318,10 +314,6 @@ custom icon elements
     margin-inline-end: var(--space-width);
 
     content: url(/projects/pet-chair/icon.svg);
-
-    h1 & {
-        size: calc(var(--icon-size) * 2);
-    }
 }
 
 .icon_two-italian-towns::before {
@@ -330,8 +322,4 @@ custom icon elements
     margin-inline-end: var(--space-width);
 
     content: url(/projects/two-italian-towns/icon.svg);
-
-    h1 & {
-        size: calc(var(--icon-size) * 2);
-    }
 }
