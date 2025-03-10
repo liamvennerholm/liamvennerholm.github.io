@@ -219,6 +219,11 @@ in text elements
 
 hr { border: solid var(--fg-color) .05rem; }
 
+.diagram_glyph {
+    height: 4rem;
+    width: 4rem;
+}
+
 .carousel{
     display: flex;
     border-radius: .5rem;
@@ -290,7 +295,6 @@ a {
 custom icon elements
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 */
-
 
 .icon_soccer-stadium::before {
     display: inline-block;
