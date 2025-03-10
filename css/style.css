@@ -308,7 +308,7 @@ custom icon elements
     content: url(/projects/soccer-stadium/icon.svg);
 
     h1 & {
-        size: var(--icon-size);
+        size: calc(var(--icon-size) * 2);
     }
 }
 
@@ -320,7 +320,7 @@ custom icon elements
     content: url(/projects/pet-chair/icon.svg);
 
     h1 & {
-        size: var(--icon-size);
+        size: calc(var(--icon-size) * 2);
     }
 }
 
@@ -332,6 +332,6 @@ custom icon elements
     content: url(/projects/two-italian-towns/icon.svg);
 
     h1 & {
-        size: var(--icon-size);
+        size: calc(var(--icon-size) * 2);
     }
 }
