@@ -297,7 +297,7 @@ custom icon elements
     inline-size: var(--icon-size);
     margin-inline-end: var(--space-width);
 
-    .icon-soccer-stadium & {
+    &, .icon-soccer-stadium {
         content: url(/projects/soccer-stadium/icon.svg);
     }
 }
