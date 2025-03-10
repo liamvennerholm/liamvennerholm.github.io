@@ -147,6 +147,10 @@ h1 {
     margin: 0 .25rem -.25rem -.2rem;
 }
 
+figcaption {
+    font-style: italic;
+}
+
 blockquote {
     margin-inline: var(--content-indent);
 }
@@ -236,7 +240,7 @@ hr { border: solid var(--fg-color) .05rem; }
     & img {
         border-radius: .5rem;
         height: 100%;
-        
+
         &:first-of-type {
             width: 90%;
         }
