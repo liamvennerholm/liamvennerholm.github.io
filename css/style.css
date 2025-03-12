@@ -31,6 +31,8 @@ variables, fonts, & variable fonts
     --content-width: 27rem;
     --content-indent: 2ch;
     --content-outdent: -2ch;
+    --content-margins-inline: 3rem;
+    --content-margine-block: 2.5rem;
     --space-width: .5ch;
     --icon-size: .75rem;
 
@@ -180,7 +182,7 @@ body {
     max-inline-size: var(--content-width);
     background-color: var(--bg-color);
     color: var(--fg-color);
-    margin: 2.5rem 3rem;
+    margin: var(--content-margine-block) var(--content-margins-inline);
 }
 
 main > :not(:first-child), article > *, .resume-section > * {
@@ -230,17 +232,27 @@ hr { border: solid var(--fg-color) .05rem; }
 
 .carousel{
     display: flex;
-    border-radius: .5rem;
+    margin-inline-start: calc(-1 * var(--content-margins-inline));
+    width: 100vw;
     overflow: auto;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     gap: var(--content-gaps);
+}
 
-    & img {
-        border-radius: .5rem;
-        height: 100%;
-        width: 90%;
+.carousel img {
+    height: 16rem;
+    width: auto;
+    border-radius: var(--content-gaps);
+    object-fit: cover;
+
+    &:first-of-type {
+        margin-inline-start: var(--content-margins-inline);
+    }
+
+    &:last-of-type {
+        margin-inline-end: var(--content-margins-inline);
     }
 }
 
