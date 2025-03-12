@@ -242,9 +242,9 @@ hr { border: solid var(--fg-color) .05rem; }
 }
 
 .carousel img {
-    width: 75vw;
-    height: auto;
-    /* object-fit: cover; */
+    height: 16rem;
+    width: auto;
+    object-fit: scale-down;
 }
 
 .carousel img:first-of-type {
