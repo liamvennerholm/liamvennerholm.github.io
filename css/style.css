@@ -244,7 +244,7 @@ hr { border: solid var(--fg-color) .05rem; }
 .carousel img {
     height: 16rem;
     width: auto;
-    object-fit: none;
+    object-fit: contain;
 }
 
 .carousel img:first-of-type {
