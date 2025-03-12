@@ -244,7 +244,6 @@ hr { border: solid var(--fg-color) .05rem; }
 .carousel img {
     height: 16rem;
     width: auto;
-    border-radius: var(--content-gaps);
     object-fit: cover;
 
     &:first-of-type {
@@ -254,6 +253,10 @@ hr { border: solid var(--fg-color) .05rem; }
     &:last-of-type {
         margin-inline-end: var(--content-margins-inline);
     }
+}
+
+article img {
+    border-radius: var(--content-gaps);
 }
 
 .drawing {
