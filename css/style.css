@@ -245,14 +245,14 @@ hr { border: solid var(--fg-color) .05rem; }
     height: 16rem;
     width: auto;
     object-fit: cover;
+}
 
-    &:first-of-type {
-        margin-inline-start: var(--content-margins-inline);
-    }
+.carousel img:first-of-type {
+    margin-inline-start: var(--content-margins-inline);
+}
 
-    &:last-of-type {
-        margin-inline-end: var(--content-margins-inline);
-    }
+.carousel img:last-of-type {
+    margin-inline-end: var(--content-margins-inline);
 }
 
 article img {
