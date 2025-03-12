@@ -246,11 +246,11 @@ hr { border: solid var(--fg-color) .05rem; }
     width: auto;
 }
 
-.carousel:first-child {
+.carousel img:first-child {
     margin-inline-start: var(--content-margins-inline);
 }
 
-.carousel:last-child {
+.carousel img:last-child {
     margin-inline-end: var(--content-margins-inline);
 }
 
