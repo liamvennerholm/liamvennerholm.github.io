@@ -262,6 +262,10 @@ article img {
     background-color: var(--bg-color-drawing);
 }
 
+code {
+    white-space: pre;
+}
+
 footer { margin-block-start: 5rem; }    
 
 ul {
