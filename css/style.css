@@ -224,10 +224,7 @@ in text elements
 
 hr { border: solid var(--fg-color) .05rem; }
 
-.diagram_glyph {
-    height: 4rem;
-    width: 4rem;
-}
+.diagram_glyph { height: 4rem; width: 4rem; }
 
 .carousel{
     display: flex;
@@ -240,26 +237,13 @@ hr { border: solid var(--fg-color) .05rem; }
     gap: var(--content-gaps);
 }
 
-.carousel img {
-    height: 16rem;
-    width: auto;
-}
+.carousel img               { height: 16rem; width: auto; }
+.carousel img:first-child   { margin-inline-start: var(--content-margins-inline); }
+.carousel img:last-child    { margin-inline-end: var(--content-margins-inline); }
+article img                 { border-radius: var(--content-gaps); }
+article > img               { max-inline-size: 100%; }
 
-.carousel img:first-child {
-    margin-inline-start: var(--content-margins-inline);
-}
-
-.carousel img:last-child {
-    margin-inline-end: var(--content-margins-inline);
-}
-
-article img {
-    border-radius: var(--content-gaps);
-}
-
-.drawing {
-    background-color: var(--bg-color-drawing);
-}
+.drawing { background-color: var(--bg-color-drawing); }
 
 code {
     font-family: "Fira Code";
