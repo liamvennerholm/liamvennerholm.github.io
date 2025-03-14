@@ -130,7 +130,7 @@ h6      { font-weight: var(--text-weight-h6);       font-size: .67rem;  } /* 4/6
 
 #dropcap{ font-weight: var(--text-weight-dropcap);  font-size: 2.75rem; }
 
-blockquote, p
+blockquote, p, code
 {         font-weight: var(--text-weight-p);        font-size: 1rem;    } /* 6/6 */
 figcaption, footer, #footer, #publish-date, small, sup
 {         font-weight: var(--text-weight-small);    font-size: .67rem;  } /* 4/6 */
