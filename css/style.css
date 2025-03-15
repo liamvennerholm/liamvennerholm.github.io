@@ -247,6 +247,7 @@ article > img               { max-inline-size: 100%; }
 
 code {
     font-family: "Fira Code";
+    line-height: 1;
     white-space: pre;
 }
 
