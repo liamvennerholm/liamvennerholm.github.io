@@ -246,7 +246,7 @@ article > img               { max-inline-size: 100%; }
 .drawing { background-color: var(--bg-color-drawing); }
 
 code {
-    font-family: "Fira Code";
+    font-family: monospace;
     line-height: 1;
     white-space: pre;
 }
@@ -286,7 +286,7 @@ a {
         padding-inline-start: var(--space-width);
     }
 
-    &:hover, &:focus-visible, .breadcrumb & {
+    &:hover, &:focus-visible, .breadcrumb &, code > & {
         text-decoration: none;
     }
 }
