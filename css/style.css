@@ -224,7 +224,8 @@ in text elements
 
 hr { border: solid var(--fg-color) .05rem; }
 
-.diagram_glyph { height: 4rem; width: 4rem; }
+.small-img { height: 4rem; width: auto; }
+.medium-img { height: 8rem; width: auto;}
 
 .carousel{
     display: flex;
