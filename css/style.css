@@ -311,7 +311,7 @@ custom icon elements
     margin-inline-end: var(--space-width);
 }
 
-.icon_soccer-stadium::before {
+.soccer-stadium::before {
     content: url(/projects/soccer-stadium/icon.svg);
 }
 
