@@ -304,6 +304,26 @@ custom icon elements
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 */
 
+.icon::before {
+    display: inline-block;
+    block-size: var(--icon-size);
+    inline-size: var(--icon-size);
+    margin-inline-end: var(--space-width);
+}
+
+.icon_soccer-stadium::before {
+    content: url(/projects/soccer-stadium/icon.svg);
+}
+
+.icon_train-station::before {
+    display: inline-block;
+    block-size: var(--icon-size);
+    inline-size: var(--icon-size);
+    margin-inline-end: var(--space-width);
+
+    content: url(/projects/train-station/icon.svg);
+}
+
 .icon_soccer-stadium::before {
     display: inline-block;
     block-size: var(--icon-size);
