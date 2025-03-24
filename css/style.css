@@ -247,7 +247,7 @@ article > img               { max-inline-size: 100%; }
 .drawing { background-color: var(--bg-color-drawing); }
 
 code {
-    font-family: monospace;
+    font-family: Consolas, monospace;
     line-height: 1;
     white-space: pre;
 }
