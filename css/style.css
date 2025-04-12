@@ -310,24 +310,14 @@ custom icon elements
     inline-size: var(--icon-size);
     margin-inline-end: var(--space-width);
 }
+/* projects */
+.soccer-stadium::before    { content: url(/projects/soccer-stadium/icon.svg);       }
+.pet-chair::before         { content: url(/projects/pet-chair/icon.svg);            }
+.two-italian-towns::before { content: url(/projects/two-italian-towns/icon.svg);    }
+.plaintext::before         { content: url(/projects/plaintext-sketchbook/icon.svg); }
+.train-station::before     { content: url(/projects/train-station/icon.svg);        }
 
-.soccer-stadium::before {
-    
-    content: url(/projects/soccer-stadium/icon.svg);
-}
-
-.pet-chair::before {
-    content: url(/projects/pet-chair/icon.svg);
-}
-
-.two-italian-towns::before {   
-    content: url(/projects/two-italian-towns/icon.svg);
-}
-
-.plaintext::before {
-    content: url(/projects/plaintext-sketchbook/icon.svg);    
-}
-
-.train-station::before {
-    content: url(/projects/train-station/icon.svg);
-}
+/* reading and watching */
+.book::before  { content: url(/reading-and-watching/book.svg);  }
+.movie::before { content: url(/reading-and-watching/movie.svg); }
+.show::before  { content: url(/reading-and-watching/show.svg);  }
