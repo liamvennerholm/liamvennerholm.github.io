@@ -196,6 +196,9 @@ main > :not(:first-child), article > *, .resume-section > * {
     display: flex;
     justify-content: space-evenly;
 }
+.tabular-lining-figures {
+    font-feature-settings: "tnum";
+}
 
 .project-icon { 
     display: inline-block;
