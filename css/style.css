@@ -281,13 +281,16 @@ a {
         text-decoration: underline var(--fg-color) .09rem;
     }
 
-    &.link::after       { content: '→'; }
     &.download::after   { content: '↓'; }
 
     &::after {
         display: inline-block;
         text-decoration: none;
         padding-inline-start: var(--space-width);
+    }
+
+    &:hover {
+        font-style: italic;    
     }
 
     &:hover, &:focus-visible, .breadcrumb &, code > & {
