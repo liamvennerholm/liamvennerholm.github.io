@@ -241,6 +241,20 @@ hr { border: solid var(--fg-color) .05rem; }
     gap: var(--content-gaps);
 }
 
+.carousel::-webkit-scrollbar-thumb {
+    color: var(--fg-color);
+}
+.carousel::-webkit-scrollbar-track {
+    color: var(--fg-color);
+}
+
+@supports (scrollbar-color: red blue;) {
+    * {
+        scrollbar-color: var(--fg-color) var(--bg-color);
+    }
+}
+
+
 .carousel a, .carousel img, .carousel div { height: 20rem; width: auto; }
 .carousel >:first-child                   { margin-inline-start: var(--content-margins-inline); }
 .carousel >:last-child                    { margin-inline-end: var(--content-margins-inline); }
