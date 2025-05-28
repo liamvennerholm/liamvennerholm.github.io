@@ -241,7 +241,7 @@ hr { border: solid var(--fg-color) .05rem; }
     gap: var(--content-gaps);
 }
 
-.carousel a, .carousel img, .carousel div { height: 20rem; width: auto; background-color: var(--mg-color);}
+.carousel a, .carousel img, .carousel div { height: 20rem; width: auto; background-color: var(--mg-color); background-size: cover;}
 .carousel >:first-child                   { margin-inline-start: var(--content-margins-inline); }
 .carousel >:last-child                    { margin-inline-end: var(--content-margins-inline); }
 article img                               { border-radius: var(--content-gaps); }
