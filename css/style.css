@@ -53,17 +53,18 @@ variables, fonts, & variable fonts
     --go-away-green: #8fb198;
     --panettone-yellow: #f9d879;
     --white: #fff;
+    --light-gray: #bbb;
+    --lv-green: #8c9;
 
     /* dark colors */
     --p-448c: #4b422c;
     --eichengrau: #16171d;
     --black: #000;
     --mid-gray: #999;
-    --light-gray: #bbb;
     
     --fg-color: var(--black);
     --mg-color: var(--mid-gray);
-    --bg-color: var(--light-gray);
+    --bg-color: var(--lv-green);
     --bg-color-drawing: var(--white);
 
     --font-text: Inter, sans-serif;
