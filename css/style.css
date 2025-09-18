@@ -319,11 +319,11 @@ custom icon elements
 }
 
 /* /projects */
-.soccer-stadium::before     { content: url(/projects/soccer-stadium/icon.svg);       }
-.pet-chair::before          { content: url(/projects/pet-chair/icon.svg);            }
-.two-italian-towns::before  { content: url(/projects/two-italian-towns/icon.svg);    }
-.plaintext::before          { content: url(/projects/plaintext-sketchbook/icon.svg); }
-.train-station::before      { content: url(/projects/train-station/icon.svg);        }
+.soccer-stadium::before     { content: url(/work/soccer-stadium/icon.svg);       }
+.pet-chair::before          { content: url(/work/pet-chair/icon.svg);            }
+.two-italian-towns::before  { content: url(/work/two-italian-towns/icon.svg);    }
+.plaintext::before          { content: url(/work/plaintext-sketchbook/icon.svg); }
+.train-station::before      { content: url(/work/train-station/icon.svg);        }
 
 /* /reading and watching */
 .book::before               { content: url(/reading-and-watching/book.svg);  }
