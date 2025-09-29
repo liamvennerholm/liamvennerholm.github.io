@@ -17,6 +17,7 @@ img {
     display: block;
     font-style: italic;
     object-fit: contain;
+    image-orientation: none;
 }
 
 /* 
