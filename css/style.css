@@ -326,3 +326,4 @@ custom icon elements
 .two-italian-towns::before  { content: url(/work/two-italian-towns/icon.svg);    }
 .plaintext::before          { content: url(/work/plaintext-sketchbook/icon.svg); }
 .train-station::before      { content: url(/work/train-station/icon.svg);        }
+.visitor-center::before     { content: url(/work/visitor-center/icon.svg);       }
