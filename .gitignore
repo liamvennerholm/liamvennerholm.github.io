@@ -4,3 +4,4 @@
 *.indd
 working/
 archive/
+*.DS_Store
