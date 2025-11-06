@@ -314,7 +314,7 @@ a {
 .download::before {
     content: '↓';
     margin-inline-end: var(--space-width);
-})
+}
 
 /* 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
@@ -324,8 +324,8 @@ custom icon elements
 
 .icon::before {
     display: inline-block;
-    block-size:         var(--icon-size);
-    inline-size:        var(--icon-size);
+    block-size: var(--icon-size);
+    inline-size: var(--icon-size);
     margin-inline-end:  var(--space-width);
 }
 
@@ -336,4 +336,4 @@ custom icon elements
 .plaintext::before          { content: url(/work/plaintext-sketchbook/icon.svg);    }
 .train-station::before      { content: url(/work/train-station/icon.svg);           }
 .visitor-center::before     { content: url(/work/visitor-center/icon.svg);          }
-.victims-in-mc::before       { content: url(/work/victims-in-mc/icon.svg);           }
+.victims-in-mc::before      { content: url(/work/victims-in-mc/icon.svg);           }
