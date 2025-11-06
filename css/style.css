@@ -136,6 +136,10 @@ blockquote, p, code
 figcaption, footer, #footer, #publish-date, small, sup
 {         font-weight: var(--text-weight-small);    font-size: .67rem;  } /* 4/6 */
 
+blockquote {
+    font-style: italic;
+}
+
 h1 {
     line-height: 1.125;
 }
@@ -307,6 +311,11 @@ a {
     footer & { padding-inline-start: 0; }
 }
 
+.download::before {
+    content: '↓';
+    margin-inline-end: var(--space-width);
+})
+
 /* 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 custom icon elements
@@ -315,15 +324,16 @@ custom icon elements
 
 .icon::before {
     display: inline-block;
-    block-size: var(--icon-size);
-    inline-size: var(--icon-size);
-    margin-inline-end: var(--space-width);
+    block-size:         var(--icon-size);
+    inline-size:        var(--icon-size);
+    margin-inline-end:  var(--space-width);
 }
 
 /* projects */
-.soccer-stadium::before     { content: url(/work/soccer-stadium/icon.svg);       }
-.pet-chair::before          { content: url(/work/pet-chair/icon.svg);            }
-.two-italian-towns::before  { content: url(/work/two-italian-towns/icon.svg);    }
-.plaintext::before          { content: url(/work/plaintext-sketchbook/icon.svg); }
-.train-station::before      { content: url(/work/train-station/icon.svg);        }
-.visitor-center::before     { content: url(/work/visitor-center/icon.svg);       }
+.soccer-stadium::before     { content: url(/work/soccer-stadium/icon.svg);          }
+.pet-chair::before          { content: url(/work/pet-chair/icon.svg);               }
+.two-italian-towns::before  { content: url(/work/two-italian-towns/icon.svg);       }
+.plaintext::before          { content: url(/work/plaintext-sketchbook/icon.svg);    }
+.train-station::before      { content: url(/work/train-station/icon.svg);           }
+.visitor-center::before     { content: url(/work/visitor-center/icon.svg);          }
+.victims-in-mc::before       { content: url(/work/victims-in-mc/icon.svg);           }
